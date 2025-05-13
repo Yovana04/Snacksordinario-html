@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería - Snacks</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .gallery-img {
+      width: 100%;
+      max-width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+    }
+    .gallery-item {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Snacks</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="paquetes.html">Paquetes</a></li>
+          <li class="nav-item"><a class="nav-link active" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="reserva.html">Reserva</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white text-center py-5">
+    <h1>Galería de Eventos</h1>
+    <p>Descubre nuestros montajes y deliciosos snacks en diferentes eventos.</p>
+  </header>
+
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-4 gallery-item">
+        <img src="https://i.pinimg.com/736x/f5/aa/b0/f5aab076afb02c10eba5e8f967ac47b8.jpg" class="gallery-img" alt="Evento 1">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="https://i.pinimg.com/736x/3c/e8/38/3ce838a1e9c0ec2c8be5a70880913c16.jpg" class="gallery-img" alt="Evento 2">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="https://i.pinimg.com/736x/18/8b/fc/188bfc709577524b37579926f80ce4d9.jpg" class="gallery-img" alt="Evento 3">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="https://i.pinimg.com/736x/6b/69/91/6b6991a07b63cdb7b0b2427bd06dc625.jpg" class="gallery-img" alt="Evento 4">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="https://i.pinimg.com/736x/87/a2/cb/87a2cb100897103ace6803bb422cba26.jpg" class="gallery-img" alt="Evento 5">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="https://i.pinimg.com/736x/29/3a/3b/293a3ba7c2a89ef6c5b7692134bcf888.jpg" class="gallery-img" alt="Evento 6">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="https://i.pinimg.com/736x/60/e7/ea/60e7ea3b50a2f27a5353edf9943af35a.jpg" class="gallery-img" alt="Evento 7">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="https://i.pinimg.com/736x/53/5a/8f/535a8fd1666fcfad6285838697d195a3.jpg" class="gallery-img" alt="Evento 8">
+      </div>
+      <div class="col-md-4 gallery-item">
+        <img src="https://i.pinimg.com/736x/a6/d5/81/a6d5813748907d362277809df993acf3.jpg" class="gallery-img" alt="Evento 9">
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Snacks para Eventos | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="title">Productos - Snacks</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <style>
+    .product-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function changeLanguage(lang) {
+        localStorage.setItem("lang", lang);
+        loadLanguage();
+      }
+
+      function getLanguage() {
+        return localStorage.getItem("lang") || "es";
+      }
+
+      function loadLanguage() {
+        const lang = getLanguage();
+        const translations = {
+          es: {
+            title: "Productos - Snacks",
+            home: "Inicio",
+            products: "Productos",
+            packages: "Paquetes",
+            gallery: "Galería",
+            reserve: "Reserva",
+            contact: "Contacto",
+            productsTitle: "Nuestros Productos",
+            productsText: "Explora nuestra variedad de snacks para cualquier ocasión.",
+            cantaritos: "Cantaritos",
+            bebidasLocas: "Bebidas Locas",
+            fresasConCrema: "Fresas con Crema",
+            manzanaPreparada: "Manzana Preparada",
+            pepinoPreparado: "Pepino Preparado",
+            sabritaPreparada: "Sabrita Preparada",
+            vasoLoco: "Vaso Loco",
+            orderNow: "Ordenar",
+            footerText: "&copy; 2025 Snacks para Eventos | Todos los derechos reservados",
+            language: "Idioma"
+          },
+          en: {
+            title: "Products - Snacks",
+            home: "Home",
+            products: "Products",
+            packages: "Packages",
+            gallery: "Gallery",
+            reserve: "Reserve",
+            contact: "Contact",
+            productsTitle: "Our Products",
+            productsText: "Explore our variety of snacks for any occasion.",
+            cantaritos: "Cantaritos",
+            bebidasLocas: "Crazy Drinks",
+            fresasConCrema: "Strawberries with Cream",
+            manzanaPreparada: "Prepared Apple",
+            pepinoPreparado: "Prepared Cucumber",
+            sabritaPreparada: "Prepared Sabrita",
+            vasoLoco: "Crazy Glass",
+            orderNow: "Order Now",
+            footerText: "&copy; 2025 Event Snacks | All rights reserved",
+            language: "Language"
+          }
+        };
+
+        document.querySelectorAll("[data-translate]").forEach(el => {
+          const key = el.getAttribute("data-translate");
+          el.innerHTML = translations[lang][key] || el.innerHTML;
+        });
+
+        document.getElementById("languageDropdownButton").textContent = lang === "es" ? "🇲🇽 Español" : "🇺🇸 English";
+      }
+
+      loadLanguage();
+
+      document.getElementById("languageDropdownButton").addEventListener("click", function (event) {
+        event.preventDefault();
+        changeLanguage(getLanguage() === "es" ? "en" : "es");
+      });
+    });
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" data-translate="title">Snacks</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-translate="home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html" data-translate="products">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="paquetes.html" data-translate="packages">Paquetes</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html" data-translate="gallery">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="reserva.html" data-translate="reserve">Reserva</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html" data-translate="contact">Contacto</a></li>
+          <li class="nav-item">
+            <button class="btn btn-light" id="languageDropdownButton">🇲🇽 Español</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-info text-white text-center py-5">
+    <h1 data-translate="productsTitle">Nuestros Productos</h1>
+    <p data-translate="productsText">Explora nuestra variedad de snacks para cualquier ocasión.</p>
+  </header>
+
+  <section class="container my-5">
+    <div class="row">
+      <!-- Producto 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/51/3e/77/513e770e4944c8b87a4fb832697212d4.jpg" class="card-img-top product-img" alt="bebidas locas">
+          <div class="card-body">
+            <h5 class="card-title" data-translate="bebidasLocas">Bebidas Locas</h5>
+            <p class="card-text">Bebidas locas con o sin alcohol.</p>
+            <a href="reserva.html" class="btn btn-info" data-translate="orderNow">Ordenar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/7c/db/bf/7cdbbfba2ee670e71b8fd169f972baeb.jpg" class="card-img-top product-img" alt="Cantaritos">
+          <div class="card-body">
+            <h5 class="card-title" data-translate="cantaritos">Cantaritos</h5>
+            <p class="card-text">Crujientes nachos servidos con queso derretido y salsas.</p>
+            <a href="reserva.html" class="btn btn-info" data-translate="orderNow">Ordenar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/6d/1e/13/6d1e1332c2e119c17a10dda510c01956.jpg" class="card-img-top product-img" alt="Fresas con crema">
+          <div class="card-body">
+            <h5 class="card-title" data-translate="fresasConCrema">Fresas con Crema</h5>
+            <p class="card-text">Fresas, uvas u otra cosa con crema.</p>
+            <a href="reserva.html" class="btn btn-info" data-translate="orderNow">Ordenar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segunda fila -->
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/d3/7a/ec/d37aecec788f838df9b585233327f7fa.jpg" class="card-img-top product-img" alt="Manzana Preparada">
+          <div class="card-body">
+            <h5 class="card-title" data-translate="manzanaPreparada">Manzana Preparada</h5>
+            <p class="card-text">Manzana preparada con diferentes toppings.</p>
+            <a href="reserva.html" class="btn btn-info" data-translate="orderNow">Ordenar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.maricruzavalos.com/wp-content/uploads/2021/05/pepinos_locos_recipe-1.jpg" class="card-img-top product-img" alt="Pepino preparado">
+          <div class="card-body">
+            <h5 class="card-title" data-translate="pepinoPreparado">Pepino Preparado</h5>
+            <p class="card-text">Pepino preparado con salsas especiales.</p>
+            <a href="reserva.html" class="btn btn-info" data-translate="orderNow">Ordenar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/36/a5/7a/36a57a76dcf184acbd8d008e1ff0d551.jpg" class="card-img-top product-img" alt="Sabrita preparada">
+          <div class="card-body">
+            <h5 class="card-title" data-translate="sabritaPreparada">Sabrita Preparada</h5>
+            <p class="card-text">Sabrita preparada con mucha salsa y toppings.</p>
+            <a href="reserva.html" class="btn btn-info" data-translate="orderNow">Ordenar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

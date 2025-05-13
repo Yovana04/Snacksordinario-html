@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Snacks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        #carouselExampleDark {
+            max-height: 500px;
+            overflow: hidden;
+        }
+
+        #carouselExampleDark .carousel-item img {
+            object-fit: cover;
+            height: 500px;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            #carouselExampleDark {
+                max-height: 300px;
+            }
+
+            #carouselExampleDark .carousel-item img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html" data-translate="title">Snacks</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html" data-translate="home">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="Productos.html" data-translate="products">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="paquetes.html" data-translate="packages">Paquetes</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contacto.html" data-translate="contact">Contacto</a></li>
+                <li class="nav-item">
+                    <button class="btn btn-light" id="languageDropdownButton" data-translate="language">🇲🇽 Español</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Carrusel -->
+<div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://scontent-mty2-1.xx.fbcdn.net/v/t39.30808-6/302182593_414107027497351_9100821199511012641_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFoIlzIGJnWRe-3O01E7_kGgnCqxLyca-iCcKrEvJxr6KF4EKAOyWHfbFHOjmMUNyZWGVZGwZYaWMN-g-NfQ31Z&_nc_ohc=kyhV7Uu5kXMQ7kNvwH8ntld&_nc_oc=AdnS79phfca0Mbxn9WklMAN6lGusxRF-V4k2n8rnvSj8PBwPEkveRS0uVuSLVnSDPC8&_nc_zt=23&_nc_ht=scontent-mty2-1.xx&_nc_gid=_PMt6wOKOyAiLktwWXn7nA&oh=00_AfKa80pqAVSn6-9kSMyQEGj6OReW4WPXOgfvkswgRD320A&oe=68280101" class="d-block w-100" alt="Snacks">
+            <div class="carousel-caption">
+                <h5 data-translate="carrito">Snacks</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.directorioleon.com.mx/empresas/810/mix-munch-5.jpg" class="d-block w-100" alt="Mesa">
+            <div class="carousel-caption">
+                <h5 data-translate="mesa">Mesa</h5>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://cdn0.bodas.com.mx/vendor/0159/3_2/960/jpeg/3b442837-859a-446e-ab1c-a0887f8deaf2_5_360159-165515043610054.jpeg" class="d-block w-100" alt="Vaso">
+            <div class="carousel-caption">
+                <h5 data-translate="vaso">Vaso</h5>
+            </div>
+        </div>
+    </div>
+    <!-- Flechas de control -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+
+<!-- Sección Sobre Nosotros -->
+<section class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="https://cdn0.bodas.com.mx/vendor/0159/3_2/960/jpeg/3b442837-859a-446e-ab1c-a0887f8deaf2_5_360159-165515043610054.jpeg" class="img-fluid rounded" alt="Vaso">
+        </div>
+        <div class="col-md-6">
+            <h2 data-translate="aboutUs">Sobre Nosotros</h2>
+            <p data-translate="aboutUsText">Somos una empresa dedicada a ofrecer snacks deliciosos para eventos especiales. Nos especializamos en bodas, cumpleaños, comuniones y más. Nuestro objetivo es hacer de tu evento una experiencia única con nuestros productos de alta calidad.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Productos Destacados -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Productos Destacados</h2>
+    <div class="row text-center" id="destacados">
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <img src="https://scontent.fntr4-1.fna.fbcdn.net/v/t39.30808-6/463383339_2915993955222455_8969862918334406642_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGIH5ctlC071Q6ZNkFw999ZtQe3im2Zgbu1B7eKbZmBu5Tjs4YEMz5b5ixnV_Q39yuc3tANbczOHnsBbpNAlard&_nc_ohc=Eoa5dH6evV4Q7kNvwEmxuzn&_nc_oc=AdkyUWUHLdJCFSXvZI2oSQ_neAYasX_RyaK32DCgTql_sf6AwBN7ogzzM796k4r8hTo&_nc_zt=23&_nc_ht=scontent.fntr4-1.fna&_nc_gid=5WXYO3zgIxkKwtRFQRM3aw&oh=00_AfIn1BETVAoqki0-9hYOFG8c1tYorpVMqbDHwvdMjToSUA&oe=6827AB61"
+                     class="card-img-top img-producto" alt="Palomitas">
+                <div class="card-body">
+                    <h5 class="card-title">Palomitas</h5>
+                    <p class="card-text">Deliciosas palomitas de maíz recién hechas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <img src="https://scontent.fmid3-1.fna.fbcdn.net/v/t39.30808-6/493309421_1232579175456001_5872650832805276812_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF_MSx8v1o6V4L6b0t1hUfOT5c_6O8LBKlPlz_o7wsEqa9RQAITUEwvrYsRXDYXj5Zz9FZIDcMcglKhbsRJwGdc&_nc_ohc=QtacEOxOLSoQ7kNvwFeHDXT&_nc_oc=Adkr0MYLUhlzXQVmc07BXF6UfRBo_jVZs9X1pAzHNH8d0JcaMsttG1nbRAutL3DMZlsokanoS9gIqhpbf_VK6wnR&_nc_zt=23&_nc_ht=scontent.fmid3-1.fna&_nc_gid=SQETy0xtUzGKx4dPkfBKgg&oh=00_AfLPhKByi0bz2JasdaqQ9jTqwgvphLuaf_6_2Te9yaLA5A&oe=6827FAF1"
+                     class="card-img-top img-producto" alt="Fresas con crema">
+                <div class="card-body">
+                    <h5 class="card-title">Fresas con crema</h5>
+                    <p class="card-text">Fresas frescas con crema dulce.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <img src="https://dcdn-us.mitiendanube.com/stores/003/907/720/products/e9314879-4ac6-41ac-b8db-37440a8c97bc-a3a50d7a56dd5f766617050406081483-1024-1024.jpg"
+                     class="card-img-top img-producto" alt="Dulces">
+                <div class="card-body">
+                    <h5 class="card-title">Mix de dulces</h5>
+                    <p class="card-text">Variedad de dulces mexicanos tradicionales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .img-producto {
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+</style>
+
+
+<!-- Botón de Reserva -->
+<section class="container text-center my-5">
+    <h2>¿Listo para tu evento?</h2>
+    <p>Reserva tu barra de snacks ahora y sorprende a tus invitados.</p>
+    <a href="reserva.html" class="btn btn-primary btn-lg" data-translate="reserveNow">Reserva Ahora</a>
+</section>
+
+<!-- Pie de página -->
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p data-translate="followUs">Síguenos en nuestras redes sociales:</p>
+        <p><a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Instagram</a> | <a href="#" class="text-white">Twitter</a></p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function changeLanguage(lang) {
+            localStorage.setItem("lang", lang);
+            loadLanguage();
+        }
+
+        function getLanguage() {
+            return localStorage.getItem("lang") || "es";
+        }
+
+        function loadLanguage() {
+            const lang = getLanguage();
+            const translations = {
+                es: {
+                    title: "Snacks",
+                    home: "Inicio",
+                    products: "Productos",
+                    packages: "Paquetes",
+                    contact: "Contacto",
+                    carrito: "El carrito",
+                    mesa: "Mesa",
+                    vaso: "Vaso",
+                    reserveNow: "Reserva Ahora",
+                    name: "Nombre",
+                    date: "Fecha",
+                    deposit: "Anticipo (MXN)",
+                    submit: "Realizar Reserva",
+                    followUs: "Síguenos en",
+                    language: "Idioma",
+                    aboutUs: "Sobre Nosotros",
+                    aboutUsText: "Somos una empresa dedicada a ofrecer snacks deliciosos para eventos especiales. Nos especializamos en bodas, cumpleaños, comuniones y más. Nuestro objetivo es hacer de tu evento una experiencia única con nuestros productos de alta calidad.",
+                    package: "Paquete",
+                    nonRefundable: "El anticipo no es reembolsable, pero puedes cambiar la fecha.",
+                    packageAvailability: "Disponibilidad del Paquete"
+                },
+                en: {
+                    title: "Snacks",
+                    home: "Home",
+                    products: "Products",
+                    packages: "Packages",
+                    contact: "Contact",
+                    carrito: "The Cart",
+                    mesa: "Table",
+                    vaso: "Glass",
+                    reserveNow: "Reserve Now",
+                    name: "Name",
+                    date: "Date",
+                    deposit: "Deposit (MXN)",
+                    submit: "Submit Reservation",
+                    followUs: "Follow us on",
+                    language: "Language",
+                    aboutUs: "About Us",
+                    aboutUsText: "We are a company dedicated to offering delicious snacks for special events. We specialize in weddings, birthdays, communions, and more. Our goal is to make your event a unique experience with our high-quality products.",
+                    package: "Package",
+                    nonRefundable: "The deposit is non-refundable, but you can change the date.",
+                    packageAvailability: "Package Availability"
+                }
+            };
+
+            document.querySelectorAll("[data-translate]").forEach(el => {
+                const key = el.getAttribute("data-translate");
+                el.textContent = translations[lang][key] || el.textContent;
+            });
+
+            document.getElementById("languageDropdownButton").textContent = lang === "es" ? "🇲🇽 Español" : "🇺🇸 English";
+        }
+
+        loadLanguage();
+
+        document.getElementById("languageDropdownButton").addEventListener("click", function (event) {
+            event.preventDefault();
+            changeLanguage(getLanguage() === "es" ? "en" : "es");
+        });
+    });
+</script>
+
+</body>
+</html>
